@@ -8,7 +8,7 @@ import (
 )
 
 const (
-	PORT     = "9090"
+	PORT     = "10000"
 	HOST_URL = "http://localhost:" + PORT
 )
 
@@ -48,8 +48,7 @@ func main() {
 	http.HandleFunc("/profile", profileHandler)
 	http.HandleFunc("/checkprofile", checkProfile)
 
-	err := http.ListenAndServe(":"+PORT, nil) // setting listening port
-	if err != nil {
-		log.Fatal("ListenAndServe: ", err)
+	
+		log.Fatal(http.ListenAndServe(":10000", nil))
 	}
 }
