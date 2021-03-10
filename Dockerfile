@@ -1,6 +1,6 @@
 #1st build
 FROM golang:1.13
-WORKDIR /go/src/github.com/dakugame/docker_fast
+WORKDIR /go/src/github.com/dakugame/docker2.0
 
 COPY cli ./cli
 
